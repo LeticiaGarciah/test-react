@@ -4,7 +4,7 @@ import "./login.css";
 const Login = () => {
   return (
     <div className="login">
-      <h1>Bem Vindo</h1>
+      <h1>Seja Bem Vindo</h1>
       <form method="post">
         <input
           type="text"
