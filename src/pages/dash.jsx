@@ -1,6 +1,5 @@
 import React from "react";
-import "../reset.css";
-import "./dash.css";
+import "./dash.scss";
 
 const Dashboard = () => {
   return (
@@ -258,7 +257,7 @@ const Dashboard = () => {
                   <div class="progress-row">
                     <p
                       class="value-label"
-                      style={{ width: "159%" }}
+                      style={{ width: "59%" }}
                       data-value="59"
                     ></p>
                     <progress max="100" value="59" data-value="59">

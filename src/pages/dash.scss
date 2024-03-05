@@ -1,52 +1,188 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700");
+
 @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
 
-:root {
-  --colorWhite: #fafbfb;
-  --colorLiteGrey: #9199a5;
-  --colorDarkGrey: #565d68;
-  --colorBlack: #1e2026;
-  --colorLite: #bbc3c9;
-  --colorBlue: #0068ff;
-  --colorBrown: #b17e4c;
-  --colorBG: #f8f9fb;
-  --colorRed: #ec407a;
-  --colorGreen: #17c993;
-  --colorDanger: #d32f2f;
-  --colorWarning: #fb8c00;
-  --colorGood: #4caf50;
-  --layoutWidth: 1406px;
-  --layoutHeight: 852px;
-  --layoutBorder: 35px;
-  --sidebarWidth: 75px;
-  --sidebarHeight: 100%;
-  --sizeXSmall: 0.5em;
-  --sizeSmall: 0.625em;
-  --sizeMedium: 0.75em;
-  --sizeLarge: 1em;
-  --sizeXLarge: 1.5em;
-  --sizeXXLarge: 3em;
+$colorWhite: #fafbfb;
+$colorLiteGrey: #9199a5;
+$colorDarkGrey: #565d68;
+$colorBlack: #1e2026;
+$colorLite: #bbc3c9;
+$colorBlue: #0068ff;
+$colorBrown: #b17e4c;
+
+$colorBG: #f8f9fb;
+$colorRed: #ec407a;
+$colorGreen: #17c993;
+
+$colorDanger: #d32f2f;
+$colorWarning: #fb8c00;
+$colorGood: #4caf50;
+
+$layoutWidth: 1406px;
+$layoutHeight: 852px;
+$layoutBorder: 35px;
+
+$sidebarWidth: 75px;
+$sidebarHeight: 100%;
+
+$sizeXSmall: 0.5em;
+$sizeSmall: 0.625em;
+$sizeMedium: 0.75em;
+$sizeLarge: 1em;
+$sizeXLarge: 1.5em;
+$sizeXXLarge: 3em;
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block
+}
+
+body {
+  line-height: 1
+}
+
+ol,
+ul {
+  list-style: none
+}
+
+blockquote,
+q {
+  quotes: none
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0
 }
 
 body:has(> .container) {
-  font-family: "Open Sans", sans-serif;
-  background: var(--colorLite);
+  background: $colorLite;
   text-align: center;
 }
 
 .love-text {
   margin-top: 20px;
-  color: var(--colorWhite);
+  color: $colorWhite;
   line-height: 1.2em;
+
   .desc {
     font-size: 0.75em;
-    color: var(--colorDanger);
+    color: $colorDanger
   }
 }
 
 .container {
+  height: 100%;
+
   .content {
-    background: var(--colorBG);
+    background: $colorWhite;
     display: flex;
     height: 100%;
     width: 100%;
@@ -54,64 +190,54 @@ body:has(> .container) {
 }
 
 .sidebar {
-  background: #0068ff;
+  background: $colorBlue;
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  text-align: center;
-  width: 75px;
 
-  .sindebar .logo .icon {
-    font-size: 3em;
-    background-color: var(--colorWhite);
+  text-align: center;
+
+  width: $sidebarWidth;
+
+  .logo .icon {
+    font-size: $sizeXXLarge;
+    color: $colorWhite;
+
     top: 16px;
     left: 12px;
+
     position: absolute;
     z-index: 100;
-  }
-  .fa {
-    display: inline-block;
-    font: normal normal normal 60px / 1 FontAwesome;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-    text-align: center;
-    color: var(--colorWhite);
   }
 
   nav {
     position: relative;
-    display: block;
-    color: #bbc3c9;
-    font-size: 1.25em;
-    list-style: none;
-    box-sizing: border-box;
 
     .menu-options {
-      color: #bbc3c9;
+      color: $colorLite;
       font-size: 1.25em;
       list-style: none;
-      box-sizing: border-box;
-      display: inline;
 
       li {
-        display: list-item;
-        text-align: webkit-match-parent;
         border-radius: 5px;
+
         padding: 8px;
         box-sizing: border-box;
         margin: 10px;
+
         &.selected,
         &:hover {
-          background-color: darken(var(--colorBG), 20%);
-          color: var(--colorWhite);
+          background: darken($colorBlue, 20%);
+          color: $colorWhite;
         }
 
         &:hover {
           cursor: pointer;
         }
       }
+
       .icon {
         font-size: inherit;
       }
@@ -121,21 +247,19 @@ body:has(> .container) {
   .more-options {
     position: absolute;
     bottom: 16px;
-    color: var(--colorBG);
-    font-size: var(--colorBG);
+    color: $colorLite;
+    font-size: $sizeXLarge;
   }
 }
 
 .main-content {
   width: 100%;
   height: 100%;
-  background: var(--colorLiteGrey);
+  background: lighten($colorLiteGrey, 30%);
   overflow: hidden;
-  border-top-right-radius: 9px;
-  border-bottom-right-radius: 9px;
-  display: block;
-  border-top-right-radius: 9px;
-  border: bottom right radius 9px;
+
+  border-top-right-radius: $layoutBorder - 26px;
+  border-bottom-right-radius: $layoutBorder - 26px;
 
   .app {
     display: flex;
@@ -145,9 +269,11 @@ body:has(> .container) {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      background: var(--colorWhite);
+
+      background: $colorWhite;
       box-shadow: 0px 1px 1px 1px rgba(181, 181, 181, 0.38);
-      border-top-right-radius: 9px;
+      border-top-right-radius: $layoutBorder - 26px;
+
       height: 70px;
 
       .title {
@@ -165,25 +291,28 @@ body:has(> .container) {
           text-transform: uppercase;
           font-weight: bold;
           font-size: 0.75em;
-          background-color: lighten(var(--colorDarkGrey));
+          color: lighten($colorDarkGrey, 10%);
           display: flex;
           align-items: center;
 
           &.selected,
           &:hover {
-            color: var(--colorBlue);
+            color: $colorBlue;
             position: relative;
 
             &::after {
               content: "";
-              border-bottom: 5px solid var(--colorBlue);
+              border-bottom: 5px solid $colorBlue;
+
               position: absolute;
               bottom: 0;
+
               width: 100%;
             }
+
             .badge {
-              background: var(--colorBlue);
-              color: var(--colorBG);
+              background: $colorBlue;
+              color: $colorWhite;
             }
           }
 
@@ -196,13 +325,14 @@ body:has(> .container) {
 
             padding: 4px 5px;
             margin: 0 5px;
-            background: var(--colorBG);
+            background: $colorLite;
 
-            color: lighten(var(--colorBG), 25%);
+            color: lighten($colorDarkGrey, 25%);
             font-size: 12px;
 
-            height: 12px;
-            width: 15px;
+            min-width: 24px;
+            display: flex;
+            justify-content: center;
           }
         }
       }
@@ -221,6 +351,7 @@ body:has(> .container) {
           &.user-img {
             padding: 0;
             border: none;
+
             img {
               border-radius: 5px;
             }
@@ -231,12 +362,14 @@ body:has(> .container) {
             top: -10px;
             right: -8px;
             border-radius: 50%;
-            background: var(--colorBG);
-            color: var(--colorBG);
+            background: $colorRed;
+            color: $colorWhite;
             font-size: 12px;
             padding-top: 5px;
             width: 20px;
-            height: 15px;
+            height: 20px;
+            display: flex;
+            justify-content: center;
           }
         }
       }
@@ -244,9 +377,8 @@ body:has(> .container) {
 
     .app-content {
       margin: 20px;
-      background: var(--colorBG);
+      background: $colorWhite;
       border-radius: 5px;
-      height: 716px;
 
       header {
         margin: 20px;
@@ -256,18 +388,19 @@ body:has(> .container) {
         .searchbox {
           display: flex;
           padding: 10px;
-          background: lighten(var(--colorBG), 33%);
+          background: lighten($colorLiteGrey, 33%);
           border-radius: 5px;
           width: 200px;
+
           .icon {
-            color: var(--colorBG);
+            color: $colorLiteGrey;
             margin: 0 5px;
           }
 
           input.search-text {
             border: none;
             background: inherit;
-            font-size: var(--sizeMedium);
+            font-size: $sizeMedium;
             font-weight: 600;
             outline: none;
           }
@@ -285,19 +418,21 @@ body:has(> .container) {
 
     .sort-dropdown {
       display: flex;
-      border: 1px solid var(--colorBG);
+      border: 1px solid $colorLite;
       border-radius: 5px;
       padding: 12px;
-      color: var(--colorBG);
-      font-size: var(--colorBG);
+      color: $colorLite;
+      font-size: $sizeMedium;
       font-weight: 600;
+
       .by,
       i {
-        color: var(--colorBlack);
+        color: $colorBlack;
         margin-left: 5px;
       }
+
       .drop {
-        border-left: 1px solid var(--colorLite);
+        border-left: 1px solid $colorLite;
         margin-left: 10px;
       }
     }
@@ -308,7 +443,7 @@ body:has(> .container) {
       border-radius: 5px;
       box-shadow: 0px 1px 1px 1px rgba(181, 181, 181, 0.38);
       position: relative;
-      color: var(--colorLite);
+      color: $colorLite;
 
       &:first-child {
         border-top-right-radius: 0;
@@ -321,13 +456,14 @@ body:has(> .container) {
       }
 
       &.selected {
-        background: lighten(var(--colorDarkGrey), 50%);
-        color: lighten(var(--colorDarkGrey), 20%);
+        background: lighten($colorDarkGrey, 50%);
+        color: lighten($colorDarkGrey, 20%);
       }
     }
 
     .display-group {
       display: flex;
+
       .icon {
         margin-right: 0;
         margin-left: 0;
@@ -338,8 +474,10 @@ body:has(> .container) {
 
 .projects {
   list-style: none;
+
   display: flex;
   flex-wrap: wrap;
+
   margin: 10px;
   height: 630px;
   overflow-y: scroll;
@@ -348,12 +486,16 @@ body:has(> .container) {
     padding: 16px;
     margin: 12px;
     box-sizing: border-box;
+
     display: flex;
     flex-direction: column;
+
     text-align: left;
+
     border-radius: 5px;
     box-shadow: 0px 1px 1px 1px rgba(181, 181, 181, 0.38);
     user-select: none;
+
     width: 285px;
 
     .logo-row {
@@ -367,7 +509,7 @@ body:has(> .container) {
       }
 
       .icon {
-        color: var(--colorLite);
+        color: $colorLite;
       }
     }
 
@@ -388,22 +530,22 @@ body:has(> .container) {
 
         padding: 8px 0;
 
-        color: lighten(var(--colorDarkGrey), 20%);
-        font-size: var(--sizeMedium);
+        color: lighten($colorDarkGrey, 20%);
+        font-size: $sizeMedium;
 
         .icon {
           margin-right: 5px;
         }
 
         a {
-          color: lighten(var(--colorDarkGrey), 20%);
+          color: lighten($colorDarkGrey, 20%);
           text-decoration: none;
         }
       }
     }
 
     .desc-row {
-      color: lighten(var(--colorDarkGrey), 20%);
+      color: lighten($colorDarkGrey, 20%);
       font-size: 12px;
       font-weight: 400;
       line-height: 18px;
@@ -424,7 +566,7 @@ body:has(> .container) {
 
       p[data-value]:after {
         content: attr(data-value) "%";
-        color: lighten(var(--colorDarkGrey), 20%);
+        color: lighten($colorDarkGrey, 20%);
         font-size: 12px;
         position: absolute;
         display: block;
@@ -441,17 +583,17 @@ body:has(> .container) {
       }
 
       progress::-webkit-progress-bar {
-        background-color: lighten(var(--colorLite), 10%);
+        background-color: lighten($colorLite, 10%);
         border-radius: 5px;
       }
 
       ::-webkit-progress-value {
-        background-color: var(--colorGreen);
+        background-color: $colorGreen;
         border-radius: 5px;
       }
 
       .low::-webkit-progress-value {
-        background-color: var(--colorRed);
+        background-color: $colorRed;
       }
     }
 
@@ -463,25 +605,25 @@ body:has(> .container) {
       .days {
         padding: 8px 5px;
         border-radius: 4px;
-        background: var(--colorLite);
+        background: $colorLite;
         font-size: 12px;
 
-        color: var(--colorDarkGrey);
-        background: lighten(var(--colorDarkGrey), 50%);
+        color: $colorDarkGrey;
+        background: lighten($colorDarkGrey, 50%);
 
         &.good {
-          color: var(--colorGood);
-          background: lighten(var(--colorGood), 50%);
+          color: $colorGood;
+          background: lighten($colorGood, 50%);
         }
 
         &.warning {
-          color: var(--colorWarning);
-          background: lighten(var(--colorWarning), 40%);
+          color: $colorWarning;
+          background: lighten($colorWarning, 40%);
         }
 
         &.danger {
-          color: var(--colorDanger);
-          background: lighten(var(--colorDanger), 40%);
+          color: $colorDanger;
+          background: lighten($colorDanger, 40%);
         }
       }
 
@@ -500,11 +642,12 @@ body:has(> .container) {
   z-index: 1000;
   bottom: 50px;
   right: 50px;
-  color: var(--colorWhite);
-  background: var(--colorBlue);
+  color: $colorWhite;
+  background: $colorBlue;
   border-radius: 50%;
   text-align: center;
-  font-size: var(--sizeXXLarge);
+  padding-top: 5px;
+  font-size: $sizeXXLarge;
   box-sizing: border-box;
   box-shadow: 10px 10px 73px 12px rgba(0, 104, 255, 0.35);
   width: 60px;
