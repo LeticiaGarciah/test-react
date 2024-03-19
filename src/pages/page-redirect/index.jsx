@@ -5,7 +5,7 @@ const Redirect = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    navigate("/dashboard/estatisticas");
+    navigate("/sistema/estatisticas");
   }, []);
 
   return <Fragment />;

@@ -1,6 +1,8 @@
 import React from "react";
 import { useNavigate, Outlet } from "react-router-dom";
 
+import { Breadcrumb } from "../components/breadcrumb";
+
 import logo from "../assets/img/logo.png";
 import "./styles.scss";
 
@@ -14,7 +16,7 @@ const Layout = () => {
   }
 
   return (
-    <div class="container">
+    <div class="container-system">
       <div class="content">
         <section class="sidebar">
           <div class="logo">
@@ -23,19 +25,19 @@ const Layout = () => {
 
           <nav>
             <ul class="menu-options">
-              <li onClick={() => navigate("/dashboard/estatisticas")}>
+              <li onClick={() => navigate("/sistema/estatisticas")}>
                 <i class="fa fa-home icon" aria-hidden="true"></i>
                 &nbsp; Estatítica
               </li>
-              <li onClick={() => navigate("/dashboard/area-de-trabalho")}>
+              <li onClick={() => navigate("/sistema/area-de-trabalho")}>
                 <i class="fa fa-paperclip icon" aria-hidden="true"></i>
                 &nbsp; Área de trabalho
               </li>
-              <li onClick={() => navigate("/dashboard/cadastro")}>
+              <li onClick={() => navigate("/sistema/cadastro")}>
                 <i class="fa fa-plus icon" aria-hidden="true"></i>
                 &nbsp; Cadastro
               </li>
-              <li onClick={() => navigate("/dashboard/permissoes")}>
+              <li onClick={() => navigate("/sistema/permissoes")}>
                 <i class="fa fa-wrench icon" aria-hidden="true"></i>
                 &nbsp; Permissões
               </li>
@@ -46,7 +48,7 @@ const Layout = () => {
         <section class="main-content">
           <div class="app">
             <header class="sub-menu">
-              <div class="title"> Projects </div>
+              <Breadcrumb />
 
               <div class="user-options">
                 <div class="icon">

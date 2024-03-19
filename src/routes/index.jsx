@@ -17,10 +17,10 @@ export const Routes = () => {
       <RoutesCompoent>
         <Route path="/login" element={<Login />} />
         <Route element={<Layout />}>
-          <Route path="/dashboard/estatisticas" element={<Estatistics />} />
-          <Route path="/dashboard/permissoes" element={<Permissions />} />
-          <Route path="/dashboard/cadastro" element={<Register />} />
-          <Route path="/dashboard/area-de-trabalho" element={<Workspace />} />
+          <Route path="/sistema/estatisticas" element={<Estatistics />} />
+          <Route path="/sistema/permissoes" element={<Permissions />} />
+          <Route path="/sistema/cadastro" element={<Register />} />
+          <Route path="/sistema/area-de-trabalho" element={<Workspace />} />
           <Route path="*" element={<Redirect />} />
         </Route>
       </RoutesCompoent>
