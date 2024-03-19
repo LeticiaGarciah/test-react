@@ -19,14 +19,14 @@ export const Breadcrumb = () => {
   }, [pathname]);
 
   const icon = useMemo(() => {
-    const value = secondValue;
+    const value = pathname.split("/").filter((value) => value)[1];
 
     if (value === "area-de-trabalho") return "fa-paperclip";
     if (value === "cadastro") return "fa-plus";
     if (value === "permissoes") return "fa-wrench";
 
     return "fa-home";
-  }, [secondValue]);
+  }, [pathname]);
 
   return (
     <>
