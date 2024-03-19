@@ -2,6 +2,7 @@ import * as React from "react";
 import * as ReactDOM from "react-dom/client";
 import "./reset.scss";
 
+<<<<<<< Updated upstream
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import Login from "./pages/login";
@@ -17,9 +18,12 @@ const router = createBrowserRouter([
     element: <Dashboard />,
   },
 ]);
+=======
+import { Routes } from "./routes";
+>>>>>>> Stashed changes
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <Routes />
   </React.StrictMode>
 );
