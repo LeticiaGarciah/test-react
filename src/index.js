@@ -1,11 +1,14 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom/client";
 import "./reset.scss";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import "bootstrap-icons/font/bootstrap-icons.css";
+
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
-import Login from "./pages/login";
-import Dashboard from "./pages/dash";
+import { Login } from "./pages/login";
+import Dashboard from "./pages/dash/dash";
 
 const router = createBrowserRouter([
   {

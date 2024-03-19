@@ -1,0 +1,283 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700");
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+
+
+$colorWhite: #fafbfb;
+$colorLiteGrey: #9199a5;
+$colorDarkGrey: #565d68;
+$colorBlack: #1e2026;
+$colorLite: #bbc3c9;
+$colorBlue: #0068ff;
+$colorBrown: #b17e4c;
+
+$colorBG: #f8f9fb;
+$colorRed: #ec407a;
+$colorGreen: #17c993;
+
+$colorDanger: #d32f2f;
+$colorWarning: #fb8c00;
+$colorGood: #4caf50;
+
+$layoutWidth: 1406px;
+$layoutHeight: 852px;
+$layoutBorder: 35px;
+
+$sidebarWidth: 75px;
+$sidebarHeight: 100%;
+
+$sizeXSmall: 0.5em;
+$sizeSmall: 0.625em;
+$sizeMedium: 0.75em;
+$sizeLarge: 1em;
+$sizeXLarge: 1.5em;
+$sizeXXLarge: 3em;
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+
+
+.container {
+  height: 100%;
+  text-align: center;
+  max-width: none;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  margin: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+.sidebar {
+    background: gray;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 283px;
+    height: 694px;
+
+  img {
+    font-size: 3em;
+    top: 15px;
+    left: 27px;
+    position: sticky;
+    z-index: 168px;
+    width: 219px;
+    height: auto;
+  }
+
+  nav {
+    position: relative;
+    height: 100%;
+    text-align: center;
+    max-width: none;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    margin: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+  }
+
+  li {
+    border-radius: 100%;
+    width: auto;
+    height: auto;
+    display: grid;
+    margin-inline-start: 10px;
+    margin-inline-end: 32px;
+    padding-inline-start: 22px;
+    background-color: grey;
+    border-bottom-color: grey;
+    margin-top: 50px;
+    
+  }
+
+  .button{
+    margin: 10px;
+    font-family: 'Poppins';
+    font-size: large;
+    line-height: normal;
+    cursor: pointer;
+    border-radius: 5px;
+
+    &:hover {
+      background-color: #d5d5d5;
+      box-shadow: inset 0 -10rem 0px rgba(158, 158, 158, 0.1);
+ }  
+  }
+.bi{
+  position: relative;
+  bottom: 0px;
+  right: 10px;
+  font-size: 73px;
+}
+
+.user{ 
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: bold;
+    color: #100f0f;
+    text-align: center;
+    text-transform: uppercase;
+  }
+.tittle{
+    display: flex;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: $colorWhite;
+    box-shadow: 0px 1px 1px 1px rgba(181, 181, 181, 0.38);
+    border-top-right-radius: $layoutBorder - 26px;
+    height: 100px;
+    margin-left: 370%;
+}}
+
+.fa{
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: $colorWhite;
+      border-top-right-radius: $layoutBorder - 26px;
+      height: 100px;
+      margin-top: -142px;
+      margin-left: 360%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+
+      
+
+        
+
+
+            
+          
+
+       
+          
+
+         
+        
+     
+    
+

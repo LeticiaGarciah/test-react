@@ -4,7 +4,7 @@ import "./login.scss";
 const Login = () => {
   return (
     <div className="login">
-      <h1>Seja Bem Vindo</h1>
+      <h1>Use e-mail e senha para entrar no sistema</h1>
       <form method="post">
         <input
           type="text"
@@ -21,7 +21,7 @@ const Login = () => {
         />
 
         <button type="submit" className="btn btn-primary btn-block btn-large">
-          Login
+          Entrar
         </button>
       </form>
     </div>
