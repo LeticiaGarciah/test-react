@@ -6,6 +6,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 import { Routes } from "./routes";
 
+
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <Routes />

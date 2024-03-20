@@ -11,7 +11,7 @@ export const Breadcrumb = () => {
   const secondValue = useMemo(() => {
     const value = pathname.split("/").filter((value) => value)[1];
 
-    if (value === "area-de-trabalho") return "Área de trabalho";
+    if (value === "area-de-trabalho") return "Perfil";
     if (value === "cadastro") return "Cadastro";
     if (value === "permissoes") return "Permissões";
 

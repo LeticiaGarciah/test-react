@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700");
-
 @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
 
 $colorWhite: #fafbfb;
@@ -191,7 +190,7 @@ body:has(> .container-system) {
 }
 
 .sidebar {
-  background: $colorDarkGrey;
+  background: $colorWhite;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -348,6 +347,7 @@ body:has(> .container-system) {
       }
 
       .user-options {
+        
         display: flex;
         margin-right: 16px;
 
@@ -483,6 +483,7 @@ body:has(> .container-system) {
 }
 
 .projects {
+  margin-top: 90px;
   list-style: none;
 
   display: flex;

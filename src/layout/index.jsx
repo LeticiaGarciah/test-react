@@ -26,8 +26,8 @@ const Layout = () => {
           <nav>
             <ul class="menu-options">
               <li onClick={() => navigate("/sistema/estatisticas")}>
-                <i class="fa fa-home icon" aria-hidden="true"></i>
-                &nbsp; Estatítica
+                <i class="fa fa-area-chart" aria-hidden="true"></i>
+                &nbsp; Estatística
               </li>
               <li onClick={() => navigate("/sistema/area-de-trabalho")}>
                 <i class="fa fa-paperclip icon" aria-hidden="true"></i>
@@ -38,7 +38,7 @@ const Layout = () => {
                 &nbsp; Cadastro
               </li>
               <li onClick={() => navigate("/sistema/permissoes")}>
-                <i class="fa fa-wrench icon" aria-hidden="true"></i>
+                <i class="fa fa-unlock-alt" aria-hidden="true"></i>
                 &nbsp; Permissões
               </li>
             </ul>
@@ -56,7 +56,7 @@ const Layout = () => {
                   <div class="badge"> 3 </div>
                 </div>
 
-                <div class="icon">
+                <div class="icon" onClick={() => navigate("/sistema/cadastro")}>
                   <i class="fa fa-user" aria-hidden="true"></i>
                 </div>
               </div>
